@@ -404,13 +404,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('༒ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 ༒', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('༒ 𝗔𝗗𝗗 𝗠𝗘  𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦 ༒', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('⎙𝚂𝙴𝙰𝚁𝙲𝙷⎙', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('❂𝙲𝙷𝙰𝙽𝙽𝙴𝙻❂', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🔱𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔰𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/LazyDeveloper')
         ], [
-            InlineKeyboardButton('⌬𝙷𝙴𝙻𝙿⌬', callback_data='help'),
-            InlineKeyboardButton('⎘𝙰𝙱𝙾𝚄𝚃⎘', callback_data='about')
+            InlineKeyboardButton('💢𝗛𝗘𝗟𝗣', callback_data='help'),
+            InlineKeyboardButton('🌀𝗔𝗕𝗢𝗨𝗧', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -421,14 +421,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('🙈 I love you dear LazyDeveloper')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('⏣𝙼𝙰𝙽𝚄𝙰𝙻 𝙵𝙸𝙻𝚃𝙴𝚁⏣', callback_data='manuelfilter'),
-            InlineKeyboardButton('💢𝙰𝚄𝚃𝙾  𝙵𝙸𝙻𝚃𝙴𝚁💢', callback_data='autofilter')
+            InlineKeyboardButton('💟𝗠𝗔𝗡𝗨𝗔𝗟 𝗙𝗜𝗟𝗧𝗘𝗥𝗦', callback_data='manuelfilter'),
+            InlineKeyboardButton('🚸𝗔𝗨𝗧𝗢 𝗙𝗜𝗟𝗧𝗘𝗥𝗦', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('➕𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽➕', callback_data='coct'),
-            InlineKeyboardButton('🚨𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳🚨', callback_data='extra')
+            InlineKeyboardButton('💭𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗢𝗡', callback_data='coct'),
+            InlineKeyboardButton(️'☣️𝗘𝗫𝗧𝗥𝗔 𝗠𝗢𝗗𝗘', callback_data='extra')
         ], [
-            InlineKeyboardButton('🌆𝙷𝙾𝙼𝙴🌆', callback_data='start'),
-            InlineKeyboardButton('🦠𝚂𝚃𝙰𝚃𝚄𝚂🦠', callback_data='stats')
+            InlineKeyboardButton('🌆𝗛𝗢𝗠𝗘🌆', callback_data='start'),
+            InlineKeyboardButton('📊𝗦𝗧𝗔𝗧𝗨𝗦', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -438,11 +438,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('💬𝙼𝙾𝚅𝙸𝙴𝚂 𝙶𝚁𝙾𝚄𝙿💬', url='https://t.me/LazyDeveloper'),
-            InlineKeyboardButton('🌀Source🌀', callback_data='source')
+            InlineKeyboardButton('💬𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣💬', url='https://t.me/LazyDeveloper'),
+            InlineKeyboardButton('🌀𝗦𝗢𝗨𝗥𝗖𝗘🌀', callback_data='source')
         ], [
-            InlineKeyboardButton('🌆𝙷𝙾𝙼𝙴🌆', callback_data='start'),
-            InlineKeyboardButton('❎Close🔐', callback_data='close_data')
+            InlineKeyboardButton('🌆𝗛𝗢𝗠𝗘🌆', callback_data='start'),
+            InlineKeyboardButton('❎𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -463,7 +463,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('⌫ 𝗕𝗔𝗖𝗞', callback_data='help'),
-            InlineKeyboardButton('⚠️Button⚠️', callback_data='button')
+            InlineKeyboardButton('⚠️𝗕𝗨𝗧𝗧𝗢𝗡⚠️', callback_data='button')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -504,7 +504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('⌫ 𝗕𝗔𝗖𝗞', callback_data='help'),
-            InlineKeyboardButton('👑Admin👑', callback_data='admin')
+            InlineKeyboardButton('👑𝗔𝗗𝗠𝗜𝗡👑', callback_data='admin')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -525,7 +525,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⌫ 𝗕𝗔𝗖𝗞', callback_data='help'),
-            InlineKeyboardButton('📼Refresh📼', callback_data='rfrsh')
+            InlineKeyboardButton('📼𝗥𝗘𝗙𝗥𝗘𝗦𝗛📼', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -544,7 +544,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('⌫ 𝗕𝗔𝗖𝗞', callback_data='help'),
-            InlineKeyboardButton('📼Refresh📼', callback_data='rfrsh')
+            InlineKeyboardButton('📼𝗥𝗘𝗙𝗥𝗘𝗦𝗛📼', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>📂 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ :{search}</b>\n\n<b>🤴 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ :{message.from_user.mention}</b>\n\n<b>🍁 ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/+ZiDeeN9yubk5NDhl><b>ᴄɪɴᴇᴍᴀ ᴄɪᴛʏ</b></a>\n\n<b>★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :CiNEMA CiTY 🍿GROUP ™️</b>"
+        cap = f"<b>📂 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ :{search}</b>\n<b>🤴 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ :{message.from_user.mention}</b>\n<b>🍁 ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/+ZiDeeN9yubk5NDhl><b>ᴄɪɴᴇᴍᴀ ᴄɪᴛʏ</b></a>\n<b>★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :CiNEMA CiTY 🍿GROUP ™️</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -775,7 +775,7 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
+    btn.append([InlineKeyboardButton(text="❎𝗖𝗟𝗢𝗦𝗘", callback_data=f'spolling#{user}#close_spellcheck')])
     await msg.reply("Hey Sona! Mujhe is naam se koi movie nhi mili, Mujhe lgta hai ki aapne spelling galat likh dii h 🤷‍♀️!\nPlease check your spelling once again 🤦‍♀️... or \n Discuss your problem with our admin here 👉 @discussion_groupp ",
                     reply_markup=InlineKeyboardMarkup(btn))
 
