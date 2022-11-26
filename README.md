@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/lazyprincessbot.jpg" alt="Lazy Princess Logo">
+  <img src="https://telegra.ph/file/b5355058d91438c2d808e.jpg" alt="CRZY PROFESSOR LOGO">
 </p>
 <h1 align="center">
-  <b> Lazy Princess BOT </b>
+  <b> CRZY PROFESSOR BOT </b>
 </h1>
 
 
