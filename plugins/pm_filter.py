@@ -422,12 +422,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('⏣𝙼𝙰𝙽𝚄𝙰𝙻 𝙵𝙸𝙻𝚃𝙴𝚁⏣', callback_data='manuelfilter'),
-            InlineKeyboardButton('🧞‍♀️𝙰𝚄𝚃𝙾  𝙵𝙸𝙻𝚃𝙴𝚁🧞‍♀️', callback_data='autofilter')
+            InlineKeyboardButton('💢𝙰𝚄𝚃𝙾  𝙵𝙸𝙻𝚃𝙴𝚁💢', callback_data='autofilter')
         ], [
             InlineKeyboardButton('➕𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽➕', callback_data='coct'),
-            InlineKeyboardButton('☠️𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳𝙴☠️', callback_data='extra')
+            InlineKeyboardButton('🚨𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳🚨', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠𝙷𝙾𝙼𝙴🏠', callback_data='start'),
+            InlineKeyboardButton('🌆𝙷𝙾𝙼𝙴🌆', callback_data='start'),
             InlineKeyboardButton('🦠𝚂𝚃𝙰𝚃𝚄𝚂🦠', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💬𝙼𝙾𝚅𝙸𝙴𝚂 𝙶𝚁𝙾𝚄𝙿💬', url='https://t.me/LazyDeveloper'),
             InlineKeyboardButton('🌀Source🌀', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠𝙷𝙾𝙼𝙴🏠', callback_data='start'),
+            InlineKeyboardButton('🌆𝙷𝙾𝙼𝙴🌆', callback_data='start'),
             InlineKeyboardButton('❎Close🔐', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Baby, Here is what i found for your query {search}"
+        cap = f"<b>📂 ᴍᴏᴠɪᴇ ɴᴀᴍᴇ :{search}</b>\n\n<b>🤴 ʀᴇϙᴜᴇsᴛᴇᴅ ʙʏ :{message.from_user.mention}</b>\n\n<b>🍁 ᴄʜᴀɴɴᴇʟ :<a href=https://t.me/+ZiDeeN9yubk5NDhl><b>ᴄɪɴᴇᴍᴀ ᴄɪᴛʏ</b></a>\n\n<b>★ ᴘᴏᴡᴇʀᴇᴅ ʙʏ :CiNEMA CiTY 🍿GROUP ™️</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
