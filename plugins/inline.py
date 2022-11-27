@@ -104,7 +104,7 @@ def get_reply_markup(query):
     buttons = [
         [
             InlineKeyboardButton('🔰𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/+ZiDeeN9yubk5NDhl'),
-            InlineKeyboardButton('⚡𝗚𝗥𝗢𝗨𝗣', url='https://youtube.com/c/GreyMattersBot')
+            InlineKeyboardButton('⚡𝗚𝗥𝗢𝗨𝗣', url='https://t.me/Mallu_Movie_Hub_Group')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
