@@ -37,8 +37,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('🤥 Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('🔔 Updates', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('💢 𝗛𝗘𝗟𝗣', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('🔔 𝗨𝗣𝗗𝗔𝗧𝗘𝗦', url='https://t.me/LazyDeveloper')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -53,7 +53,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey Baby {u.mention}, Most welcome to ♥️♥️ {message.chat.title} ♥️♥️ !\nAap apne man-pasand content ka naam neeche comment-box mei type kijiye, Agr mere paas available hoga toh main aapko share krr dungi, Agr mere paas nhi hoga toh My love ADMIN ji se content upload krne ko keh dungi 🥰 !! \n 🤍 smile 🤍 </b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>Hey {u.mention}, welcome to ♥️♥️ {message.chat.title} ♥️♥️ !\nAap apne man-pasand content ka naam neeche comment-box mei type kijiye, Agr mere paas available hoga toh main aapko share krr dungi, Agr mere paas nhi hoga toh My love ADMIN ji se content upload krne ko keh dungi 🥰 !! \n 🤍 smile 🤍 </b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
