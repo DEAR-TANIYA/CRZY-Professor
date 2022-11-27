@@ -107,7 +107,6 @@ async def next_page(bot, query):
                 InlineKeyboardButton("𝗡𝗘𝗫𝗧 ⌦", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
-            )
     btn.insert(0, 
         [
             InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
