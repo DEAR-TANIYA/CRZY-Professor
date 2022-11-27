@@ -1,7 +1,7 @@
 class script(object):
-    START_TXT = """Hello {},
-Myself <a href=https://t.me/{}>{}</a>,\n\nTrust me ! I can't even imagine how super-fast i can drive your Database channel \n\nAre you ready for Long Drive Baby...🤪"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
+    START_TXT = """<b>Hello {},
+My Name is <a href=https://t.me/{}>{}</a>,\n,I Can Provide Movies, Just Add Me To Your Group And Make Me Admin....\nThen See My Powers....⚡️⚡️</b>"""
+    HELP_TXT = """Hello {}
 Here is the help for my COMMANDS."""
     ABOUT_TXT = """๏ ᴍʏ ɴᴀᴍᴇ: {}
 ๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/cinemaclubcc>CRZY乛 BOY</a>
@@ -11,8 +11,8 @@ Here is the help for my COMMANDS."""
 ๏ ʜᴏsᴛᴇᴅ ᴏɴ: ʜᴇʀᴏᴋᴜ
 ๏ ᴠᴇʀsɪᴏɴ : v1.0.1 [ ʙᴇᴛᴀ ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Lazy Princess is an open source project. 
-- Source - <a href=https://t.me/cinemaclubcc>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>  
+- <b>Sorry Source Code Of This Bot is Private Add This Bot in Your Group And Use Like Yours😊</b>\n\n. 
+- Source - <a href=https://t.me/+ZiDeeN9yubk5NDhl>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>  
 
 <b>DEVS:</b>
 - <a href=https://t.me/cinemaclubcc>CRZY乛 BOY</a>"""
