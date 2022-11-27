@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🔔 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🔔', url='https://t.me/LazyDeveloper')
+                InlineKeyboardButton('🔔 𝗨𝗣𝗗𝗔𝗧𝗘𝗦 🔔', url='https://t.me/+ZiDeeN9yubk5NDhl')
             ],
             [
-                InlineKeyboardButton('🙆🏻 𝗛𝗘𝗟𝗣 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('💢 𝗛𝗘𝗟𝗣 ', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('༒ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦 ༒', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🔱𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔰𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/+ZiDeeN9yubk5NDhl')
             ],[
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣', callback_data='help'),
-            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧', callback_data='about')
+            InlineKeyboardButton('💢𝗛𝗘𝗟𝗣', callback_data='help'),
+            InlineKeyboardButton('🌀𝗔𝗕𝗢𝗨𝗧', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,7 +67,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Sona, Please Join Updates Channel ", url=invite_link.invite_link
+                    "🔰 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ", url=invite_link.invite_link
                 )
             ]
         ]
@@ -76,12 +76,12 @@ async def start(client, message):
             try:
             	kk, file_id = message.command[1].split("_", 1)
             	pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            	btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
+            	btn.append([InlineKeyboardButton(" 📥 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻", callback_data=f"{pre}#{file_id}")])
             except IndexError:
-                btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
+                btn.append([InlineKeyboardButton(" 📥 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**𝗣𝗹𝗲𝗮𝘀𝗲 𝗝𝗼𝗶𝗻 𝗠𝘆 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝘁𝗼 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗕𝗼𝘁!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -90,11 +90,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('༒ 𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣𝗦 ༒', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('🔱𝗦𝗘𝗔𝗥𝗖𝗛', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔰𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/+ZiDeeN9yubk5NDhl')
             ],[
-            InlineKeyboardButton('𝗛𝗘𝗟𝗣', callback_data='help'),
-            InlineKeyboardButton('𝗔𝗕𝗢𝗨𝗧', callback_data='about')
+            InlineKeyboardButton('💢𝗛𝗘𝗟𝗣', callback_data='help'),
+            InlineKeyboardButton('🌀𝗔𝗕𝗢𝗨𝗧', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -292,7 +292,7 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Processing...⏳", quote=True)
+        msg = await message.reply("PROCESSING...⏳", quote=True)
     else:
         await message.reply('Sona Jo File delete krna chahte ho us pr /delete ka reply kro !!', quote=True)
         return
@@ -343,12 +343,12 @@ async def delete_all_index(bot, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="YES", callback_data="autofilter_delete"
+                        text="☑️YES", callback_data="autofilter_delete"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="CANCEL", callback_data="close_data"
+                        text="❎️CANCEL", callback_data="close_data"
                     )
                 ],
             ]
