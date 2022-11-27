@@ -426,13 +426,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('🙈 I love you dear LazyDeveloper')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('💟𝗠𝗔𝗡𝗨𝗔𝗟 𝗙𝗜𝗟𝗧𝗘𝗥𝗦', callback_data='manuelfilter'),
-            InlineKeyboardButton('🚸𝗔𝗨𝗧𝗢 𝗙𝗜𝗟𝗧𝗘𝗥𝗦', callback_data='autofilter')
+            InlineKeyboardButton('💟𝗠𝗔𝗡𝗨𝗔𝗟 𝗙𝗜𝗟𝗧𝗘𝗥𝗦💟', callback_data='manuelfilter'),
+            InlineKeyboardButton('🚸𝗔𝗨𝗧𝗢 𝗙𝗜𝗟𝗧𝗘𝗥𝗦🚸', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('💭𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗢𝗡', callback_data='coct'),
-            InlineKeyboardButton(️'☣️𝗘𝗫𝗧𝗥𝗔 𝗠𝗢𝗗𝗘', callback_data='extra')
+            InlineKeyboardButton('💭𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗜𝗢𝗡💭', callback_data='coct'),
+            InlineKeyboardButton(️'☣️𝗘𝗫𝗧𝗥𝗔 𝗠𝗢𝗗𝗘☣️', callback_data='extra')
         ], [
-            InlineKeyboardButton('🌆𝗛𝗢𝗠𝗘🌆', callback_data='start'),
+            InlineKeyboardButton('🌆𝗛𝗢𝗠𝗘', callback_data='start'),
             InlineKeyboardButton('📊𝗦𝗧𝗔𝗧𝗨𝗦', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -446,7 +446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💬𝗠𝗢𝗩𝗜𝗘𝗦 𝗚𝗥𝗢𝗨𝗣💬', url='https://t.me/Mallu_Movie_Hub_Group'),
             InlineKeyboardButton('🌀𝗦𝗢𝗨𝗥𝗖𝗘🌀', callback_data='source')
         ], [
-            InlineKeyboardButton('🌆𝗛𝗢𝗠𝗘🌆', callback_data='start'),
+            InlineKeyboardButton('🌆𝗛𝗢𝗠𝗘', callback_data='start'),
             InlineKeyboardButton('❎𝗖𝗟𝗢𝗦𝗘', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
