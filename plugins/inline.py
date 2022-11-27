@@ -1,4 +1,4 @@
-import logging
+importance logging
 from pyrogram import Client, emoji, filters
 from pyrogram.errors.exceptions.bad_request_400 import QueryIdInvalid
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument, InlineQuery
@@ -103,7 +103,8 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('🔰𝗖𝗛𝗔𝗡𝗡𝗘𝗟', url='https://t.me/+ZiDeeN9yubk5NDhl'),
+            InlineKeyboardButton('⚡𝗚𝗥𝗢𝗨𝗣', url='https://youtube.com/c/GreyMattersBot')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
