@@ -1,8 +1,10 @@
 class script(object):
     START_TXT = """<b>Hello {},
-My Name is <a href=https://t.me/{}>{}</a>,\n,I Can Provide Movies, Just Add Me To Your Group And Make Me Admin....\nThen See My Powers....⚡️⚡️</b>"""
+My Name is <a href=https://t.me/{}>{}</a>,I Can Provide Movies,Just Add Me To Your Group And Make Me Admin🤴....\nThen See My Powers....⚡️⚡️</b>"""
     HELP_TXT = """Hello {}
-Here is the help for my COMMANDS."""
+<code>
+Hᴇʏ Wᴇʟᴄᴏᴍᴇ Tᴏ Mʏ Cᴏᴍᴍᴀɴᴅs Yᴏᴜ Sᴇᴇᴍ Lᴏsᴛ Oʀ Hᴀᴠᴇ A Dᴏᴜʙᴛ Usᴇ Tʜᴇ Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Nᴀᴠɪɢᴀᴛᴇ Tʜʀᴏᴜɢʜ Iᴛ !</code>
+"""
     ABOUT_TXT = """๏ ᴍʏ ɴᴀᴍᴇ: {}
 ๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/cinemaclubcc>CRZY乛 BOY</a>
 ๏ ʟᴀɴɢᴜᴀɢᴇ : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
@@ -18,12 +20,12 @@ Here is the help for my COMMANDS."""
 - <a href=https://t.me/cinemaclubcc>CRZY乛 BOY</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and LazyPriness will respond whenever that keyword hits the message
+- <code>Filter is the feature were users can set automated replies for a particular keyword and LazyPriness will respond whenever that keyword hits the message</code>
 
 <b>NOTE:</b>
-1. BOT should have admin privillage.
-2. Only admins can add filters in a chat.
-3. Alert buttons have a limit of 64 characters.
+[1].<code>BOT should have admin privillage.</code>
+[2].<code>Only admins can add filters in a chat.</code>
+[3].<code>Alert buttons have a limit of 64 characters.</code>
 
 <b>Commands and Usage:</b>
 • /filter - <code>add a filter in chat</code>
@@ -32,12 +34,12 @@ Here is the help for my COMMANDS."""
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Supports both url and alert inline buttons.
+- <code>Supports both url and alert inline buttons.</code>
 
 <b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. BOT supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
+[1]. <code>Telegram will not allows you to send buttons without any content, so content is mandatory.</code>
+[2]. <code>BOT supports buttons with any telegram media type.</code>
+[3]. <code>Buttons should be properly parsed as markdown format</code>
 
 <b>URL buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/+ZiDeeN9yubk5NDhl)</code>
@@ -47,18 +49,18 @@ Here is the help for my COMMANDS."""
     AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
 <b>NOTE:</b>
-1. Make me the admin of your channel if it's private.
-2. Make sure that your channel does not contains camrips, porn and fake files.
-3. Forward the last message to me with quotes.
- I'll add all the files in that channel to my db."""
+[1].<code> Make me the admin of your channel if it's private.</code>
+[2].<code> Make sure that your channel does not contains camrips, porn and fake files.</code>
+[3].<code> Forward the last message to me with quotes.</code>
+ <code>I'll add all the files in that channel to my db.</code>"""
     CONNECTION_TXT = """Help: <b>Connections</b>
 
-- Used to connect bot to PM for managing filters 
-- it helps to avoid spamming in groups.
+-<code>Used to connect bot to PM for managing filters</code>
+-<code>it helps to avoid spamming in groups.</code>
 
 <b>NOTE:</b>
-1. Only admins can add a connection.
-2. Send <code>/connect</code> for connecting me to ur PM
+1.<code>Only admins can add a connection.</code>
+2.<code>Send <code>/connect</code> for connecting me to ur PM
 
 <b>Commands and Usage:</b>
 • /connect  - <code>connect a particular chat to your PM</code>
