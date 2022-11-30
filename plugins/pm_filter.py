@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -110,6 +110,13 @@ async def next_page(bot, query):
     btn.insert(0, 
         [
             InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
+        ]
+    )
+    btn.insert(1,
+        [
+            InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'💫 Tips', 'tips')
+        
         ]
     )
     try:
@@ -369,7 +376,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('☑️Check pm, i have sent file my pm....', show_alert=True)
+                await query.answer('👍Check pm, i have sent file my pm....', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -643,7 +650,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -679,7 +686,13 @@ async def auto_filter(client, msg, spoll=False):
         [
             InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
         ]
-   
+    )
+    btn.insert(1,
+        [
+            InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'💫 Tips', 'tips')
+        
+        ]
     )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -772,7 +785,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("<b>🙋‍♂️ Hey Check Your Spelling \n Join Requested Group ☞ @Mallu_Movie_Hub_Group</b>")
+        k = await msg.reply("<b>🙋‍♂️ Hey Check Your Spelling \n\n Join Requested Group ☞ @Mallu_Movie_Hub_Group</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -784,7 +797,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="❎𝗖𝗟𝗢𝗦𝗘", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("<b>🙋‍♂️ Hey Check Your Spelling \n Join Requested Group ☞ @Mallu_Movie_Hub_Group</b>",
+    await msg.reply("<b>🙋‍♂️ Hey Check Your Spelling \n\n Join Requested Group ☞ @Mallu_Movie_Hub_Group</b>",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
