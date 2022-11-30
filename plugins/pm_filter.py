@@ -169,20 +169,20 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     title = chat.title
                 except:
                     await query.message.edit_text("Make sure I'm present in your group sona!!", quote=True)
-                    return await query.answer('🙈 I love you dear LazyDeveloper ♥️')
+                    return await query.answer('💟 I love you dear')
             else:
                 await query.message.edit_text(
                     "Sona ! is chat se toh main connected hu hi nhi!\nAgar connect krna h toh mujhe /connect command do !",
                     quote=True
                 )
-                return await query.answer('🙈 I love you dear LazyDeveloper ♥️')
+                return await query.answer('💟 I love you dear')
 
         elif chat_type in ["group", "supergroup"]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('🙈 I love you dear LazyDeveloper ♥️')
+            return await query.answer('💟 I love you dear')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == "creator") or (str(userid) in ADMINS):
@@ -280,7 +280,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('🙈 I love you dear LazyDeveloper ♥️')
+        return await query.answer('💟 I love you dear')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -298,7 +298,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('🙈 I love you dear Developer indu ♥️')
+        return await query.answer('🤦‍♂️ മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയിത മൂവിയിൽ കുത്തി നോക്കാതെ ബ്രോന് വേണ്ടത് റിക്വസ്റ്റ് ചെയ്യുക...')
     elif query.data == "backcb":
         await query.answer()
 
@@ -309,7 +309,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "Arey! Arey! pehle mujhe kisi group mei ADD toh krr lo ji... 🤭",
             )
-            return await query.answer('🙈 I love you dear Developer indu ♥️')
+            return await query.answer('🤦‍♂️ മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയിത മൂവിയിൽ കുത്തി നോക്കാതെ ബ്രോന് വേണ്ടത് റിക്വസ്റ്റ് ചെയ്യുക...')
         buttons = []
         for groupid in groupids:
             try:
@@ -430,7 +430,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        await query.answer('🙈 I love you dear LazyDeveloper')
+        await query.answer('💟 I love you dear')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('MᴀɴᴜᴀʟFɪʟᴛᴇʀ', callback_data='manuelfilter'),
@@ -574,7 +574,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('🙈 I love you dear LazyDeveloper')
+            return await query.answer('💟 I love you dear')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -621,7 +621,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('🙈 I love you dear Developer indu ♥️')
+    await query.answer('🤦‍♂️ മറ്റുള്ളവർ റിക്വസ്റ്റ് ചെയിത മൂവിയിൽ കുത്തി നോക്കാതെ ബ്രോന് വേണ്ടത് റിക്വസ്റ്റ് ചെയ്യുക...')
 
 
 async def auto_filter(client, msg, spoll=False):
