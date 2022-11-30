@@ -144,8 +144,8 @@ async def advantage_spoll_choker(bot, query):
                 tetx=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
                                        [[
-                                         InlineKeyboardButton('🔰Cʜᴀɴɴᴇʟ', url='https://t.me/+ZiDeeN9yubk5NDhl'),
-                                         InlineKeyboardButton('🔰Cʜᴀɴɴᴇʟ', url='https://t.me/+ZiDeeN9yubk5NDhl')  
+                                         InlineKeyboardButton('🔎Gᴏᴏɢʟᴇ', url='https://google.com/search?q='),
+                                         InlineKeyboardButton('Yᴀɴᴅᴇx🔍', url='https://yandex.com/search?text=')  
 
                                        ]] 
                 ),
