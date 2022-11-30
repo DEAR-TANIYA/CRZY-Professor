@@ -140,7 +140,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('Tʜɪs ᴍᴏᴠɪᴇ ɴᴏᴛ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ\n\nAɴᴅ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ᴍᴏᴠɪᴇ ᴀɴᴅ ɢᴏᴏʟɢ Sᴇᴀʀᴄʜ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ!')
+            k = await query.message.edit('<b>Tʜɪs ᴍᴏᴠɪᴇ ɴᴏᴛ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ\nAɴᴅ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ᴍᴏᴠɪᴇ ᴀɴᴅ ɢᴏᴏʟɢ Sᴇᴀʀᴄʜ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ!\n\nRᴇϙᴜᴇsᴛ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ <a href=https://t.me/cinemaclubcc>Cʀᴢʏ_ʙᴏʏ</a></b>')
             await asyncio.sleep(10)
             await k.delete()
 
