@@ -756,7 +756,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("😒 currently unavailable ! we are really sorry for inconvenience !\n Have patience ! our great admins will upload it as soon as possible")
+        k = await msg.reply("❎️ബ്രോ, മറ്റുള്ളവർ റിക്വസ്റ്റ്റി ചെയിത മൂവിയിൽ കുത്തി നോക്കാതെ ബ്രോന് വേണ്ടത് റിക്വസ്റ്റ് ചെയ്യുക.👍")
         await asyncio.sleep(8)
         await k.delete()
         return
