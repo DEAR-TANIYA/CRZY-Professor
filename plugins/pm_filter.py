@@ -141,7 +141,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit(
-                tetx=(M_NT_FND),
+                text=(M_NT_FND).
                 reply_markup=InlineKeyboardMarkup(
                                        [[
                                          InlineKeyboardButton('🔎Gᴏᴏɢʟᴇ', url='https://google.com/search?q='),
