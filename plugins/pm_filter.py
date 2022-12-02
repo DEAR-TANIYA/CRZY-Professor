@@ -147,7 +147,17 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>Tʜɪs ᴍᴏᴠɪᴇ ɴᴏᴛ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ\nAɴᴅ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ᴍᴏᴠɪᴇ ᴀɴᴅ ɢᴏᴏʟɢ Sᴇᴀʀᴄʜ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ!\n\nRᴇϙᴜᴇsᴛ ɢʀᴏᴜᴘ ᴏᴡɴᴇʀ <a href=https://t.me/cinemaclubcc>Cʀᴢʏ_ʙᴏʏ</a></b>')
+            k = await query.message.edit(
+            tetx=(M_NT_FND),
+                reply_markup=InlineKeyboardMarkup(
+                                       [[
+                                         InlineKeyboardButton('🔎Google', url='https://google.com/search?q='),
+                                         InlineKeyboardButton('Yandex🔍', url='https://yandex.com/search?text=')  
+
+                                       ]] 
+                ),
+                parse_mode='html'
+)
             await asyncio.sleep(10)
             await k.delete()
 
