@@ -148,7 +148,7 @@ async def advantage_spoll_choker(bot, query):
             await auto_filter(bot, query, k)
         else:
             k = await query.message.edit(
-                tetx=(M_NT_FND).
+                text=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
                                        [[
                                          InlineKeyboardButton('🔎Google', url='https://google.com/search?q='),
@@ -156,8 +156,9 @@ async def advantage_spoll_choker(bot, query):
 
                                        ]] 
                 ),
-                parse_mode="html"
+                parse_mode='html'
 )
+
             await asyncio.sleep(10)
             await k.delete()
 
