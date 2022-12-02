@@ -109,5 +109,5 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
-M_NT_FND = """<b>this movie not my Database\nplease Check goolg and yandex\nRequest Admins <a href=https://t.me/cinemaclubcc>CRZY乛 BOY</a></b>"""
+M_NT_FND = """<code>⚠️Tʜɪs ᴍᴏᴠɪᴇ ɴᴏᴛ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ\nAɴᴅ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ᴍᴏᴠɪᴇ ᴀɴᴅ ɢᴏᴏʟɢ Sᴇᴀʀᴄʜ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ!\n\nRᴇϙᴜᴇsᴛ ɢʀᴏᴜᴘ</code>)"""
 
