@@ -151,7 +151,7 @@ async def advantage_spoll_choker(bot, query):
                 text=(M_NT_FND),
                 reply_markup=InlineKeyboardMarkup(
                                        [[
-                                         InlineKeyboardButton('🔎Google', url='https://google.com/search?q='),
+                                         InlineKeyboardButton('🍿ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url='https://t.me/Mallu_Movie_Hub_Group'),
                                          InlineKeyboardButton('Yandex🔍', url='https://yandex.com/search?text=')  
 
                                        ]] 
@@ -372,6 +372,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
+            size = f"{files.file_size}"
+            mention = f"{query.from_user.mention}"
+        buttons = [
+            [
+                InlineKeyboardButton('『🎪 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎪』', url='https://t.me/Mallu_Movie_Hub_Group')
+            ]
+            ]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -416,6 +423,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = f_caption
         if f_caption is None:
             f_caption = f"{title}"
+        buttons = [
+            [
+                InlineKeyboardButton('『🎪 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎪』', url='https://t.me/Mallu_Movie_Hub_Group')
+            ]
+            ]
+
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
